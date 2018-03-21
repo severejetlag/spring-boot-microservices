@@ -22,12 +22,12 @@ public class SongsController {
         return songRepository.findOne(songId);
     }
 
-    @GetMapping("/songs")
+    @PostMapping("/songs")
     public Song createSong(@PathVariable Song song){
         return songRepository.save(song);
     }
 
-    @GetMapping("/songs/{songId}")
+    @DeleteMapping("/songs/{songId}")
     public HttpStatus deteSong(@PathVariable Long songId){
         songRepository.delete(songId);
         return HttpStatus.OK;
