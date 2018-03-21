@@ -60,4 +60,3 @@ services:
      - POSTGRES_USER=postgres
      - POSTGRES_DB=pgdev
      - GRADLE_USER_HOME=cache
-     - SPRING_PROFILES_ACTIVE=dev
